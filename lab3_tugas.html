@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Lanjutan</title>
+</head>
+<body>
+ 
+	<style type="text/css">
+	html,body{
+		padding: 0;
+		margin:0;
+		font-family: sans-serif;
+	}
+ 
+	.menu{
+		background-color: #c300ff;
+	}
+ 
+	.menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+ 
+	.menu > ul > li {
+		float: left;
+	}
+ 
+	
+	.menu li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+ 
+	.menu li a:hover{
+		background-color: #c300ff;
+	}
+ 
+	li.dropdown {
+		display: inline-block;
+	}
+ 
+	.dropdown:hover .isi-dropdown {
+		display: block;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: #fff !important;
+	}
+ 
+	.isi-dropdown {
+		position: absolute;
+		display: none;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		background-color: #f9f9f9;
+	}
+ 
+	.isi-dropdown a {
+		color: #3c3c3c !important;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: #232323 !important;
+		background: #f3f3f3 !important;
+	}
+</style>
+ 
+ 
+<header class="header">
+	<div class="menu">
+ 
+		<ul>
+			<li><a href="lab3_tugas.html">Home</a></li>
+			<li class="dropdown"><a href="#">DROPDOWN MENU LAB 3 WEB</a>
+				<ul class="isi-dropdown">
+					<li><a href="lab3_list.html">LAB 3 LIST</a></li>
+					<li><a href="lab3_tabel.html">LAB 3 TABEL</a></li>
+					<li><a href="lab3_form.html">LAB 3 FORM</a></li>
+				</ul>
+			</li>
+		</ul>
+ 
+	</div>
+</header>
+ 
+<br/>
+ 
+<center>
+	<h1>Membuat Menu Dropdown dan Listbox</h1>
+</center>
+
+<h4>CONTOH LISTBOX</h4>
+<form action="proses.php" method="get">
+    <p>Pulau Besar
+    <select name='pulau Besar' multiple='multiple'>
+      <option value='jawa'>jawa</option>
+      <option value='sumatra' selected='selected'>sumatra</option>
+      <option value='sulawesi'>sulawesi</option>
+      <option value='kalimantan'>kalimantan</option>
+      <option value='papua'>papua</option>
+    </select>
+    </p>
+    <input type='submit' name='tombol' value='kirim' />
+</form>
+</body>
+</html>
